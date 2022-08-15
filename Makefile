@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -ggdb
-HEADERS = cifar.h config.h markov.h stb_ds.h stb_image_write.h utils.h
+HEADERS = cifar.h config.h markov.h mnist.h stb_ds.h stb_image_write.h utils.h
 
 .PHONY: run clean
 

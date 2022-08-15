@@ -5,8 +5,8 @@ Inspired by a [stream](https://www.twitch.tv/videos/1526029909) from [@rexim](ht
 ## Usage
 First, make data dirs, e.g.:
 ```console
-$ ls ./data
-cifar-10-batches-bin/  output/
+$ ls data/
+cifar-10-batches-bin/  mnist-raw/  output/
 ```
 Next, adjust [`config.h`](./config.h) accordingly, then:
 ```
@@ -18,6 +18,7 @@ feh -g 512x512 -Z ./data/output
 ```
 
 ## Datasets
+- [MNIST](http://yann.lecun.com/exdb/mnist/)
 - [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 ## Dependencies

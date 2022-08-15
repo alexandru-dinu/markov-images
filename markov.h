@@ -110,10 +110,10 @@ void generate_image_from_markov(Markov **chain, Image32 *output)
             ptrdiff_t index = hmgeti(*chain, context);
 
             if (index < 0) {
-                /* *IMAGE32_GET(*output, x, y) = 0xFF0000FF; */
+                /* size_t r_state = rand() % num_states; */
+                /* *IMAGE32_GET(*output, x, y) = get_random_next_pixel((*chain)[r_state].value); */
 
-                size_t r_state = rand() % num_states;
-                *IMAGE32_GET(*output, x, y) = get_random_next_pixel((*chain)[r_state].value);
+                *IMAGE32_GET(*output, x, y) = 0xFF000000;
             }
             else {
                 *IMAGE32_GET(*output, x, y) = get_random_next_pixel((*chain)[index].value);
