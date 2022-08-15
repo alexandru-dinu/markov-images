@@ -14,7 +14,7 @@ make && ./main
 ```
 You can view the images, e.g. using [`feh`](https://linux.die.net/man/1/feh):
 ```
-feh data/output
+feh -g 512x512 -Z ./data/output
 ```
 
 ## Datasets
