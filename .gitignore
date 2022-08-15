@@ -2,8 +2,6 @@
 main
 data/
 
-*.png
-
 # Prerequisites
 *.d
 
